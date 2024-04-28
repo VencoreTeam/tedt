@@ -1,0 +1,71 @@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Blooket Cheats</TITLE>
+<H1>Blooket Cheats</H1>
+<DL>
+  javascript:(()=>{try{eval("");}catch(e){let i=document.createElement("iframe");document.body.append(i);window.alert=i.contentWindow.alert.bind(window);i.remove();return alert("Auto Update bookmarks require eval to work, which is blocked by Blooket's CSP. Please download a CSP unblocker extension for this to work");};let img=new Image;img.src="https://gitlab.com/blooket/blooket-cheats/autoupdate/global/getDailyRewards.png?"+Date.now(),img.crossOrigin="Anonymous",img.onload=function(){let c=document.createElement("canvas"),ctx=c.getContext("2d");c.width=this.width,c.height=this.height,ctx.drawImage(img,0,0,this.width,this.height);let{data}=ctx.getImageData(0,0,this.width,this.height),decode="";for(let i=0;i<data.length;i+=4)0!==data[i+3]&&(decode+=String.fromCharCode((data[i]-Math.floor(data[i+2]/2))*65536+256*data[i+1]+data[i+2]));eval(decode)}})();
+
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+<DL>
+</DL></DT>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+<DL>
+</DL></DT>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+<DL>
+</DL></DT>
+</DL>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Titan+One');@import url('https://fonts.googleapis.com/css?family=Nunito');body {color: white;margin: 0;padding: 0;background-color: #0D1117;}#topbar {left: 0;right: 0;background-color: hsl(270, 100%, 37.5%);font-size: 3rem;padding: .5rem .75rem }#topbar>a {font-family: Titan One;font-weight: 100;color: white;margin-inline: .5rem;text-decoration: none;}#topbar>a>svg {fill: white }a {font-family: Nunito;font-weight: bolder;color: #58A6FF;}h1, dt {text-align: center;font-family: Titan One;font-weight: 100;}.categories {display: flex;flex-flow: row wrap;justify-content: space-evenly;gap: 1rem;margin-bottom: 2rem;}.category {padding-block: .5rem;min-width: 20rem;border-radius: 10px;background-color: rgb(128 0 255 / 50%);}.cheats a {background-color: rgb(13 17 23 / 30%);margin: .25rem;display: flex;justify-content: center;align-items: center;height: 2rem;border-radius: 5px;}
+</style>
+<script>
+    document.body.innerHTML = `<div id="topbar"><a href="https://github.com/05Konz/Blooket-Cheats">Blooket Cheats</a></div><h1><a href="https://github.com/05Konz/Blooket-Cheats/blob/main/tutorial/readme.md">Bookmarklet Import Instructions<br>(what you're supposed to do)</a></h1><div id="cheats"></div><div style="display: none;">${document.body.innerHTML}</div>`;
+    document.querySelector('#cheats').innerHTML = '<h1>Blooket Cheats<br>(Drag to bookmarks bar)<br>Some might not work unless you import them</h1><div class="categories"></div>';
+        for (const [category, scripts] of Object.entries(Array.from(document.querySelector('dl').children).map(x => x.querySelector("dl") || x).map(x => [x.parentNode.querySelector(':scope > h3')?.innerHTML || "Default", Array.from(x.querySelectorAll('a')).map(a => [a.innerHTML, decodeURI(a.href)]).reduce((a, [b, c]) => (a[b] = c, a), {})]).reduce((a, [b, c]) => (a[b] = {...(a[b] || {}), ...c}, a), {}))) {
+            const categoryElement = document.createElement('div');
+            categoryElement.innerHTML = `<h1>${category}</h1>`;
+            categoryElement.classList.add("category");
+            document.querySelector('#cheats').querySelector(".categories").append(categoryElement);
+            const cheatsElement = document.createElement('div');
+            cheatsElement.classList.add("cheats");
+            categoryElement.append(cheatsElement);
+            for(const [name, script] of Object.entries(scripts)) {
+                const cheatElement = document.createElement('a');
+                cheatElement.draggable = true;
+                cheatElement.href = script;
+                cheatElement.innerHTML = name;
+                cheatsElement.append(cheatElement);
+            }
+        }
+</script>
