@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarklets</title>
+</head>
+<body>
+    <h1>Bookmarklets</h1>
+    <ul>
+        <li><a href="javascript:(()=>{try{eval("");}catch(e){let i=document.createElement('iframe');document.body.append(i);window.alert=i.contentWindow.alert.bind(window);i.remove();return alert('Auto Update bookmarks require eval to work, which is blocked by Blooket\'s CSP. Please download a CSP unblocker extension for this to work');};let img=new Image;img.src='https://gitlab.com/blooket/blooket-cheats/autoupdate/global/getDailyRewards.png?'+Date.now(),img.crossOrigin='Anonymous',img.onload=function(){let c=document.createElement('canvas'),ctx=c.getContext('2d');c.width=this.width,c.height=this.height,ctx.drawImage(img,0,0,this.width,this.height);let{data}=ctx.getImageData(0,0,this.width,this.height),decode='';for(let i=0;i<data.length;i+=4)0!==data[i+3]&&(decode+=String.fromCharCode((data[i]-Math.floor(data[i+2]/2))*65536+256*data[i+1]+data[i+2]));eval(decode)}})();">Auto Update Bookmarklet</a></li>
+    </ul>
+</body>
+</html>
